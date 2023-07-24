@@ -3,11 +3,12 @@ This is the official implementation of the paper VI-Map: Infrastructure-Assisted
 # VI-Map
 
 VI-Map is the first system that leverages roadside infrastructure to enhance real-time HD mapping for autonomous driving. In contrast to the single-vehicle online HD map construction, VI-Map empowers vehicles with a significantly more precise and comprehensive HD map. Witness the capabilities of VI-Map in action through our demo video below. 
-<!-- a video here -->
+
+https://github.com/yuzehh/VI-Map/blob/master/images/VI-Map_demo.mov
 
 ## System Overview
 
-![](https://limacv.github.io/deblurnerf/images/pipeline.png)
+![teaser](https://github.com/yuzehh/VI-Map/blob/master/images/teaser.png)
 The key idea of VI-Map is to exploit the unique spatial and temporal observations of roadside infrastructure to build and maintain an accurate and up-to-date HD map, which is then fused by the vehicle with its on-vehicle HD map in real-time to boost/update the vehicle’s scene understanding. 
 
 ## Requirements
@@ -26,13 +27,13 @@ VI-Map's artifact evaluation relies on some basic hardware and software environm
 | NVIDIA Driver  | 515.57  |
 | CUDA Version  | 11.7  |
 
-<!-- add a pic here -->
+![nvidia-smi](https://github.com/yuzehh/VI-Map/blob/master/images/nvidia-smi.png)
 
 
 ## Infrastructure-End Code and Evaluation
 
 ### Introduction 
-<!-- a pic here -->
+![infra](https://github.com/yuzehh/VI-Map/blob/master/images/infra_pipline.png)
 
 At the infrastructure end, The infrastructure leverages its two unique observations: the accumulated 3D LiDAR point cloud and the precise vehicle trajectories, to estimate a precise and comprehensive HD map. Specifically, the infrastructure extracts meticulously designed bird-eye-view (BEV) features from the two pieces of data sources and then employs them for efficient map construction.
 
@@ -58,7 +59,7 @@ This process will generate HD maps for different infrastructures, and you can fi
 ## Vehicle-End Code and Evaluation
 
 ### Introduction 
-<!-- a pic here -->
+![veh](https://github.com/yuzehh/VI-Map/blob/master/images/veh_pipline.png)
 
 At the vehicle end, the vehicle receives the HD map from the infrastrucutre, and then integrates the infrastructure's HD map with its own HD map. A new
 three-stage map fusion algorithm is designed to merge the HD map from infrastructure with the on-vehicle one.
@@ -81,12 +82,12 @@ This process will generate the fused HD map for several vehicle-infrastructure H
 
 ## General Dataset for Research on Infrastrucutre-Assisted Autonomous Driving
 
-This repository currently contains a limited number of data samples for quick demos and artifact evaluation. However, it's essential to note that VI-Map is evaluated on a vast dataset sourced from both the CARLA simulator and real-world scenarios. To contribute to the community, we are delighted to release the entire dataset collected from the CARLA simulator through [this link (Google Drive)](https://hkustconnect-my.sharepoint.com/:f:/g/personal/lmaag_connect_ust_hk/EqB3QrnNG5FMpGzENQq_hBMBSaCQiZXP7yGCVlBHIGuSVA?e=UaSQCC). 
+This repository currently contains a limited number of data samples for quick demos and artifact evaluation. However, it's essential to note that VI-Map is evaluated on a vast dataset sourced from both the CARLA simulator and real-world scenarios. To contribute to the community, we are delighted to release the entire dataset collected from the CARLA simulator through [this link (Google Drive)](https://drive.google.com/file/d/1xwg10Ueju2GhR2QSmSOABKSzGI0vIuxd/view?usp=sharing). 
 
 This dataset is general as it comprises sensor data(e.g., 3D LiDAR point clouds) and poses from both the roadside infrastructure and vehicle end. Its applicability is not limited to the VI-Map project alone, but to other research related to infrastructure-assisted autonomous driving.
 
 ## Genreal Code for Collecting Data in CARLA Simulator for Research on (Infrastrucutre-Assisted) Autonomous Driving
-As cooperative perception between vehicle and infrastructure (V2I) or vehicle and vehicle (V2V) become emerging research areas, acquiring relevant data for research purposes can be challenging. In addition to sharing the dataset mentioned above, we are pleased to release the code used to collect data within the CARLA simulator. You can access the code through this repository: [repository link].
+As cooperative perception between vehicle and infrastructure (V2I) or vehicle and vehicle (V2V) become emerging research areas, acquiring relevant data for research purposes can be challenging. In addition to sharing the dataset mentioned above, we are pleased to release the code used to collect data within the CARLA simulator. You can access the code through this repository: https://github.com/yuzehh/CARLA-Dataset-Creation.git.
 
 This repository contains code that enables the placement of any pose, type, and number of sensors at arbitrary locations (roadside infrastructure or vehicles) in CARLA. Furthermore, it allows for generating varying traffic flows, ranging from light to heavy, while efficiently recording and storing sensor data. We believe this resource can benefit the broader research community and foster advancements in cooperative perception research.
 <!-- Although has official docs  -->
