@@ -18,7 +18,7 @@ VI-Map's artifact evaluation relies on some basic hardware and software environm
 
 | Hardware Environment  | Version |
 | ------------- | ------------- |
-| GPU  | 1 x NVIDIA Geforce RTX 2060 SUPER |
+| GPU  | 1 x NVIDIA Geforce RTX 2060 SUPER(~1.2GB) |
 | CPU | Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz |
 | RAM | suggest more than 10GB |
 
