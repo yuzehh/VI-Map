@@ -4,7 +4,7 @@ This is the official implementation of the paper **VI-Map: Infrastructure-Assist
 
 VI-Map is the first system that leverages roadside infrastructure to enhance real-time HD mapping for autonomous driving. In contrast to the single-vehicle online HD map construction, VI-Map empowers vehicles with a significantly more precise and comprehensive HD map from roadside infrastructure. Witness the capabilities of VI-Map in action through our demo video below. 
 
-[![Watch the Video](https://github.com/yuzehh/VI-Map/blob/master/images/demopic.png)](https://www.youtube.com/watch?v=-oqyWPgR3P0)
+https://github.com/yuzehh/VI-Map/assets/67583016/388181dd-035f-4e6a-9f59-47d653f24db1
 
 ## System Overview
 
