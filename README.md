@@ -19,7 +19,7 @@ VI-Map's artifact evaluation relies on some basic hardware and software environm
 | Hardware Environment  | Version |
 | ------------- | ------------- |
 | GPU  | 1 x NVIDIA Geforce RTX 2060 SUPER |
-| CPU | .... |
+| CPU | Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz |
 | RAM | suggest more than 10GB |
 
 | Software Environment  | Version |
@@ -54,7 +54,7 @@ conda activate VI-Map_infra
 cd VI-Map/infrastructure/
 python3 vis_pred.py 
 ```
-This process will generate HD maps for different infrastructures’ inputs, and you can find the results in the "infrastructure/vis_results" directory. The images labeled as "evalXXX.png" are the visualizations of the generated HD maps.
+This process will generate HD maps for different infrastructures' inputs, and you can find the results in the "infrastructure/vis_results" directory. The images labeled as "evalXXX.png" are the visualizations of the generated HD maps.
 
 
 ## Vehicle-End Code and Evaluation
