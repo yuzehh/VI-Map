@@ -14,7 +14,6 @@ The key idea of VI-Map is to exploit the unique spatial and temporal observation
 
 ## Requirements
 VI-Map's artifact evaluation relies on some basic hardware and software environment as shown below. The listed environment versions are the ones we have tested, but variations with slight differences should still be compatible.
-<!-- list the xiancun ?  how to fill the hardware and software requirement? -->
 
 | Hardware Environment  | Version |
 | ------------- | ------------- |
@@ -92,7 +91,6 @@ This dataset is general as it comprises sensor data(e.g., 3D LiDAR point clouds)
 Cooperative perception between vehicle and infrastructure (V2I) or vehicle and vehicle (V2V) have become emerging research areas, however, acquiring relevant data for research purposes can be challenging. In addition to sharing the dataset mentioned above, we are pleased to release the code used to collect data within the CARLA simulator. You can access the code through this repository: https://github.com/yuzehh/CARLA-Dataset-Creation.git.
 
 This repository contains code that enables the placement of any pose, type, and number of sensors at arbitrary locations (roadside infrastructure or vehicles) in CARLA. Furthermore, it allows for generating varying traffic flows, ranging from light to heavy, while efficiently recording and storing sensor data. We believe this resource can benefit the broader research community and foster advancements in cooperative perception research.
-<!-- Although has official docs  -->
 
 ## Citation
 If you find the code or dataset useful, please cite our paper.
