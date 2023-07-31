@@ -45,8 +45,10 @@ conda activate VI-Map_infra
 cd VI-Map/infrastructure/
 pip install -r requirement.txt
 ```
-Install pytorch from https://pytorch.org/get-started/locally/
-Install pytorch scatter from https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html (Optional dependencies are also needed)
+Install pytorch from https://pytorch.org/get-started/locally/.
+
+Install pytorch scatter from https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html (Optional dependencies are also needed).
+
 These steps will create a Conda environment named "VI-Map_infra".
 
 ### Execute
