@@ -38,18 +38,20 @@ At the infrastructure end, the infrastructure leverages its two unique observati
 
 ![infra](https://github.com/yuzehh/VI-Map/blob/master/images/infra_pipline.png)
 
-### Install conda environment
+### Create conda environment
 ```
-git clone https://github.com/yuzehh/VI-Map.git
+conda create -n VI-Map_infra python=3.9
+conda activate VI-Map_infra
 cd VI-Map/infrastructure/
-conda env create -f infra_env.yml
+pip install -r requirement.txt
 ```
+Install pytorch from https://pytorch.org/get-started/locally/
+Install pytorch scatter from https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html (Optional dependencies are also needed)
 These steps will create a Conda environment named "VI-Map_infra".
 
 ### Execute
 For a quick demo and evaluation:
 ```
-conda activate VI-Map_infra
 cd VI-Map/infrastructure/
 python3 vis_pred.py 
 ```
@@ -65,7 +67,7 @@ three-stage map fusion algorithm is designed to merge the HD map from the infras
 
 ![veh](https://github.com/yuzehh/VI-Map/blob/master/images/veh_pipline.png)
 
-### Install conda environment
+### Create conda environment
 ```
 cd VI-Map/vehicle/
 conda env create -f vehicle_env.yml
