@@ -38,6 +38,12 @@ At the infrastructure end, the infrastructure leverages its two unique observati
 
 ![infra](https://github.com/yuzehh/VI-Map/blob/master/images/infra_pipline.png)
 
+### Download repository 
+```
+git clone https://github.com/yuzehh/VI-Map.git
+```
+Then download the model from [link](https://drive.google.com/file/d/1kHUPBQuJVBUYRqr0e9K1e3nr37XZSjck/view?usp=sharing) and put it into the folder "VI-Map/infrastructure".
+
 ### Create conda environment
 ```
 conda create -n VI-Map_infra python=3.9
