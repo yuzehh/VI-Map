@@ -147,6 +147,8 @@ def main(args):
 
     # train_loader, val_loader = semantic_dataset(args.version, args.dataroot, data_conf, args.bsz, args.nworkers)
     # train_loader, val_loader = semantic_dataset(args.dataroot, data_conf, args.bsz, args.nworkers)
+    if not os.path.exists('./vis_results'):
+        os.makedirs('./vis_results')
     val_loader = semantic_dataset(args.dataroot, data_conf, args.bsz, args.nworkers)
     model = get_model(args.model, data_conf, args.instance_seg, args.embedding_dim, args.direction_pred, args.angle_class)
     model.load_state_dict(torch.load(args.modelf), strict=False)
