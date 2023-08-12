@@ -225,7 +225,7 @@ class _LaneNetCluster(object):
             embedding_image_feats = get_lane_embedding_feats_result['lane_embedding_feats']
         )
 
-        mask = np.zeros(shape=[binary_seg_result.shape[0], binary_seg_result.shape[1]], dtype=np.int)
+        mask = np.zeros(shape=[binary_seg_result.shape[0], binary_seg_result.shape[1]], dtype=int)
         db_labels = dbscan_cluster_result['db_labels']
         unique_labels = dbscan_cluster_result['unique_labels']
         coord = get_lane_embedding_feats_result['lane_coordinates']
