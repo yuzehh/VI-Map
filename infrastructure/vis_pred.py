@@ -102,11 +102,8 @@ def vis_vector(model, val_loader, angle_class):
                 colors = _get_colors(inst_num) 
                 # image  = np.ones((segmentation.shape[2], segmentation.shape[3],3), dtype=np.int32)*255
                 image  = np.ones((segmentation.shape[2], segmentation.shape[3], 3))*255
-                coord_name = 'coord' + str(rec[si]) 
                 for i,coord in enumerate(coords):
                     image[coord[:,0], coord[:,1],:] = colors[i]
-                    save_coord = save_path + coord_name + '_ele' + str(i) + '.npy'
-                    np.save(save_coord, coord)
                 save_path = "./vis_results/"
                 img_name = 'eval' + str(rec[si]) + '.png'
                 save_img = save_path + img_name
@@ -114,6 +111,12 @@ def vis_vector(model, val_loader, angle_class):
                 plt.imshow(image)
                 plt.axis('off')
                 plt.savefig(save_img)
+                save_coord = save_path + 'coord' + str(rec[si]) + '.npy'
+                coords_save = np.concatenate(coords)
+                np.save(save_coord, coords_save)
+                save_coordlen = save_path + 'coordlen' + str(rec[si]) + '.npy'
+                coords_len = [len(coord) for coord in coords]
+                np.save(save_coordlen, np.array(coords_len))
                 type_name = 'type' + str(rec[si]) + '.npy'
                 save_type = save_path + type_name
                 np.save(save_type, linetypes)
