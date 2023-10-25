@@ -1,4 +1,4 @@
-This is the official implementation of the paper **VI-Map: Infrastructure-Assisted Real-Time HD Mapping for Autonomous Driving**. 
+This is the official implementation of the paper **VI-Map: Infrastructure-Assisted Real-Time HD Mapping for Autonomous Driving (MobiCom 2023)**. 
 
 # VI-Map
 
